@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoBiography</title>
+  <link rel="stylesheet" href="autobiography.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  
+   
+<div class="top-header">
+  <img src="C:\Users\e1557\Desktop\website\web.jpg" alt="logo">
+  <span>AutoBiography</span>
+</div>
+
+
+<!-- Navbar -->
+ <main>
+  <div class="navbar">
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Project</a>
+    
+  </div>
+
+  <div class="contact-btn">
+    <button>Contact</button>
+    <ul class="dropdown-menu">
+      <li><a href="contact.html">Contact Page</a></li>
+      <li><a href="mailto:youremail@email.com">Email Me</a></li>
+      <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+    </ul>
+  </div>
+ <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search projects...">
+  <button onclick="searchAll()">Search</button>
+  <button onclick="prevResult()">Prev</button>
+  <button onclick="nextResult()">Next</button>
+</div>
+
+</div>
+
+ 
+ 
+
+<div class="layout">
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="home-content">
+    <h1>Hello! </h1>
+<p>
+  I am <span>Prince Luciano </span></h1 >aspiring Web developer
+</p>
+<p>
+  I aim to grow my skills in IT, continuously learn, and take on challenges with dedication 
+  and creativity.
+</p>
+
+
+
+ 
+</div>
+
+
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+          <a href="mailto:youremail@email.com">📧 Email</a>
+          <a href="https://github.com/" target="_blank">💻 GitHub</a>
+          <a href="https://linkedin.com/" target="_blank">🔗 LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- About Me Section -->
+<section id="about">
+  <img src="C:\Users\e1557\Desktop\website\z1x1-removebg-preview.png" alt="Prince Luciano">
+  <h1 class="about-title">About Me</h1>
+  <div class="about-content">
+    <p>
+      Hi! I’m <span>Prince Daniel Luciano</span>, BSIT student at NEUST. 
+      I’m passionate about technology, problem-solving, and creating useful systems 
+      that can help people and make daily tasks easier.
+    </p>
+    <p>
+      I enjoy learning new skills and continuously improving myself. I strive to stay 
+      positive, motivated, and creative in everything I do, while balancing different 
+      aspects of life and studies.
+    </p>
+    <p>
+      I consider myself a thoughtful and dedicated person who values persistence, 
+      curiosity, and growth. My goal is to develop projects and skills that can make 
+      a meaningful impact.<br><i>Lately, I enjoy sitting and coding with a cup of coffee</i>
+    </p>
+  </div>
+</div>
+
+ <section id="hobbies" class="hobiesinterest">
+  <h1>Hobbies & Interests</h1>
+  <ul>
+    <li>Listening to music</li>
+    <li>Playing online games</li>
+    <li>Travel</li>
+    <li>Curious about what the Philippines could have been if it were never colonized</li>
+    <li>Watching movies</li>
+    <li>Biking</li>
+    <li>Guitars</li>
+  </ul>
+</section>
+ 
+
+
+
+  
+  <!-- Slider container -->
+<div id="hobbiesd" class="hobbies-slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\spotify logo.jpg" alt="Music">
+      <p>Music</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\nature.jpg" alt="Travel">
+      <p>Travel</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\games logo.png" alt="Online Games">
+      <p>Online Games</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\netflix.jpg" alt="Movies">
+      <p>Movies</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\pet.jpg" alt="Pet">
+      <p>Pet</p>
+    </div>
+
+    <!-- Duplicate slides for seamless animation -->
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\spotify logo.jpg" alt="Music">
+      <p>Music</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\nature.jpg" alt="Travel">
+      <p>Travel</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\games logo.png" alt="Online Games">
+      <p>Online Games</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\netflix.jpg" alt="Movies">
+      <p>Movies</p>
+    </div>
+    <div class="slide">
+      <img src="C:\Users\e1557\Desktop\website\pet.jpg" alt="Pet">
+      <p>Pet</p>
+    </div>
+  </div>
+
+
+
+<br>
+
+
+
+
+
+<!--table-->
+  <section id="about" class="table-wrap">
+ 
+    <h1>My Favorites</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Item</th>
+          <th>Why I Like It</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Category"><span class="cat food">Food & Drink</span></td>
+          <td data-label="Item">Coffee (any kind)</td>  
+          <td data-label="Why I Like It">Great while coding; keeps me awake and focused.</td>
+          <td data-label="Rating" class="rating">★★★★★</td>
+        </tr>
+        <tr>
+          <td data-label="Category"><span class="cat music">Music</span></td>
+          <td data-label="Item">Guitar</td>
+          <td data-label="Why I Like It">Relaxing and perfect for jam sessions.</td>
+          <td data-label="Rating" class="rating">★★★★☆</td>
+        </tr>
+        <tr>
+          <td data-label="Category"><span class="cat tech">Hobby</span></td>
+          <td data-label="Item">Coding / Building Projects</td>
+          <td data-label="Why I Like It">Problem solving and making things — satisfying!</td>
+          <td data-label="Rating" class="rating">★★★★★</td>
+        </tr>
+        <tr>
+          <td data-label="Category"><span class="cat music">Movies/Series</span></td>
+          <td data-label="Item">Time-travel / Sci-fi</td>
+          <td data-label="Why I Like It">Mind-bending plots and great visuals.</td>
+          <td data-label="Rating" class="rating">★★★★☆</td>
+        </tr>
+        <tr>
+          <td data-label="Category"><span class="cat tech">Tools</span></td>
+          <td data-label="Item">VS Code</td>
+          <td data-label="Why I Like It">Lightweight and lots of useful extensions for web dev.</td>
+          <td data-label="Rating" class="rating">★★★★★</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+<section id="about">
+  <!-- Heading for Quotes Section -->
+  <h1>Words That Inspire Me</h1>
+
+  <div class="about-timeline-wrapper">
+    <!-- Left: Core Values -->
+    <div class="core-values-timeline">
+      <div class="timeline-item">
+        <h3>Persistence</h3>
+        <p>Always pushing forward and never giving up when faced with challenges.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Curiosity</h3>
+        <p>Constantly seeking new knowledge and learning opportunities.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Creativity</h3>
+        <p>Thinking outside the box to solve problems and create meaningful projects.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Integrity</h3>
+        <p>Being honest, responsible, and maintaining strong moral principles.</p>
+      </div>
+    </div>
+
+    <!-- Right: Quotes -->
+    <div class="quotes-section">
+      <div class="quote-item">
+        <p>"Success is the sum of small efforts repeated day in and day out."</p>
+        <span>- Robert Collier</span>
+      </div>
+      <div class="quote-item">
+        <p>"The best way to predict the future is to create it."</p>
+        <span>- Peter Drucker</span>
+      </div>
+      <div class="quote-item">
+        <p>"Don’t watch the clock; do what it does. Keep going."</p>
+        <span>- Sam Levenson</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h1 class="section-title">My Skills & Talents</h1>
+    <p class="skills-intro">
+      Over the years, I’ve developed a mix of technical skills and creative talents. 
+      I enjoy diving deep into coding, experimenting with different programming languages, 
+      and building projects that challenge me. At the same time, I nurture my creative side through music and design.
+    </p>
+
+    <div class="skills-cards">
+      <!-- Technical Skills Card -->
+      <div class="skill-card">
+        <h2>Technical Skills 💻</h2>
+        <ul>
+          <li><strong>C++</strong> – building systems, console apps, and algorithms.</li>
+          <li><strong>HTML & CSS</strong> – designing and styling web pages.</li>
+          <li><strong>Java</strong> – creating small projects and applications.</li>
+          <li><strong>Visual Studio & CodeBlocks</strong> – coding efficiently with professional tools.</li>
+          <li><strong>Problem-Solving</strong> – analyzing and solving coding challenges step by step.</li>
+        </ul>
+      </div>
+
+      <!-- Creative Talents Card -->
+    <div class="skill-card">
+  <h2>Creative Talents 🎨🌸</h2>
+  <ul>
+    <li><strong>Event Styling</strong> – creating elegant and unique event setups.</li>
+    <li><strong>Design Skills</strong> – skilled in arranging and designing various creative concepts.</li>
+    <li><strong>Floral Arrangement</strong> – making bouquets and decorative flower designs.</li>
+    <li><strong>Visual Creativity</strong> – presenting ideas in a stylish and artistic way.</li>
+    <li><strong>Attention to Detail</strong> – ensuring every design element complements the overall theme.</li>
+  </ul>
+</div>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+
+<!-- PROJECT SECTION -->
+ <section id="project" class="project-section">
+  <div class="container">
+    <h1>My Projects</h1>
+    <p class="project-intro">
+  Here are some of my sample projects that I’ve built using different technologies. 
+  Each project showcases my skills in coding, design, and problem-solving.
+ </p>
+
+    <div class="project-container">
+      <!-- ATM Machine -->
+      <div class="project-card">
+        <img src="C:\Users\e1557\Desktop\website\OIP (1).jpg" alt="ATM Machine">
+        <h2>ATM Machine (C++)</h2>
+        <p>A simulation of an ATM machine using C++ with features like balance inquiry, withdrawal, and deposit.</p>
+      </div>
+
+      <!-- Barangay Certificate -->
+      <div class="project-card">
+        <img src="C:\Users\e1557\Desktop\website\n197d78c7-69c3-4a18-b937-e1f02c14ce9d.jpg" alt="Barangay Certificate">
+        <h2>Barangay Certificate Generator</h2>
+        <p>A system built in C++ and HTML tags for generating certificates (Clearance, Indigency, Good Moral).</p>
+      </div>
+
+      <!-- Calculator -->
+      <div class="project-card">
+        <img src="C:\Users\e1557\Desktop\website\yb5bd57770f6fan3b82912428dc4d9e905.jpg" alt="Calculator">
+        <h2>Calculator (JavaScript)</h2>
+        <p>A functional calculator created using HTML, CSS, and JavaScript with basic operations.</p>
+      </div>
+
+      <!-- Personal Website -->
+      <div class="project-card">
+        <img src="C:\Users\e1557\Desktop\website\fdfbbdb1-f5ed-4598-b631-e2b665956946.jpg" alt="Personal Website">
+        <h2>Personal Portfolio Website</h2>
+        <p>My own portfolio showcasing my skills, education, and projects.</p>
+      </div>
+
+      <!-- Municipal Website -->
+      <div class="project-card">
+        <img src="C:\Users\e1557\Desktop\website\y8ef3c6cf-d7e5-473b-axyde8-973b046edb68.jpg" alt="Municipal Website">
+        <h2>Municipal Website</h2>
+        <p>A static municipal website built with HTML and CSS, presenting local government info and services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <p>&copy; 2025 Prince Luciano | All Rights Reserved</p>
+    <p>Contact: 09######## | Email: <a href="mailto:prince.danielluciano@gmail.com">prince.danielluciano@gmail.com</a></p>
+  </div>
+  <div class="footer-links">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+  </div>
+</footer>
+
+
+
+ 
+
+  <script>
+   alert(" Keep exploring. Every scroll reveals something new!");
+
+
+    // ScrollSpy effect
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+ 
+
+
+
+
+let searchResults = [];
+let currentIndex = 0;
+
+function searchAll() {
+  let input = document.getElementById("searchInput").value.toLowerCase().trim();
+  
+  // Clear old results
+  searchResults = [];
+  currentIndex = 0;
+
+  if (input === "") {
+    alert("Please type something to search.");
+    return;
+  }
+
+  let elements = document.querySelectorAll("h1, h2, h3, p, td, li, span, a, div, strong");
+  
+  elements.forEach(el => {
+    if (el.innerText.toLowerCase().includes(input)) {
+      searchResults.push(el);
+    }
+  });
+
+  if (searchResults.length > 0) {
+    // Scroll to first match
+    currentIndex = 0;
+    scrollToResult();
+    alert(`Found ${searchResults.length} result(s). Use Next/Prev buttons to navigate.`);
+  } else {
+    alert("No results found!");
+  }
+}
+
+function scrollToResult() {
+  if (searchResults.length > 0) {
+    searchResults[currentIndex].scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+function nextResult() {
+  if (searchResults.length > 0) {
+    currentIndex = (currentIndex + 1) % searchResults.length;
+    scrollToResult();
+  }
+}
+
+function prevResult() {
+  if (searchResults.length > 0) {
+    currentIndex = (currentIndex - 1 + searchResults.length) % searchResults.length;
+    scrollToResult();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
